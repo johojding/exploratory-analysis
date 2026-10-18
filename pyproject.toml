@@ -1,0 +1,24 @@
+[project]
+name = "biomedical-eda"
+version = "0.1.0"
+description = "Exploratory analysis of biomedical datasets"
+requires-python = ">=3.14"
+dependencies = [
+    "pandas",
+    "scikit-learn"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = "tests"
