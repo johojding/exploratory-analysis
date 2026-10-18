@@ -1,11 +1,21 @@
 from biomedical_quality import quality_report, class_balance_report
 from sklearn.datasets import load_breast_cancer
 
-dataset = load_breast_cancer(as_frame=True)
 
-df = dataset.data
-targets = dataset.target
-target_names = dataset.target_names
+def load_dataset(): 
+    dataset = load_breast_cancer(as_frame=True)
 
-df_report, duplicates = quality_report(df)
-df_targets = class_balance_report(targets, target_names)
+    df = dataset.data.copy()
+    df["target"] = dataset.target
+    return df, dataset.target_names
+
+def generate_quality_report(df):
+    quality_df, duplicates = quality_report(df)
+    return quality_df, duplicates
+
+
+def generate_class_balance(df, target_names):
+    class_balance = class_balance_report(df["target"], target_names)
+    return class_balance
+
+
