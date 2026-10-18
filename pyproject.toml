@@ -5,7 +5,8 @@ description = "Exploratory analysis of biomedical datasets"
 requires-python = ">=3.14"
 dependencies = [
     "pandas",
-    "scikit-learn"
+    "scikit-learn",
+    "matplotlib",
 ]
 
 [project.optional-dependencies]

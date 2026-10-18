@@ -13,6 +13,7 @@
 - python >= 3.14
 - pandas
 - scikit/learn
+- matplotlib
 
 ### Used for development/testing
 - ipykernel
