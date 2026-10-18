@@ -9,10 +9,6 @@ def load_dataset():
     df["target"] = dataset.target
     return df, dataset.target_names
 
-def generate_quality_report(df):
-    quality_df, duplicates = quality_report(df)
-    return quality_df, duplicates
-
 
 def generate_class_balance(df, target_names):
     class_balance = class_balance_report(df["target"], target_names)
