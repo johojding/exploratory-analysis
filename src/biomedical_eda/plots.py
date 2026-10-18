@@ -7,3 +7,6 @@ def plot_class_balance(class_balance):
     ax.set_ylabel("Counts")
     ax.set_title("Class-count plot")
     return fig
+
+def plot_feature_histogram(df, feature):
+    return
