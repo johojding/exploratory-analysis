@@ -4,7 +4,6 @@ from sklearn.datasets import load_breast_cancer
 
 def load_dataset(): 
     dataset = load_breast_cancer(as_frame=True)
-
     df = dataset.data.copy()
     df["target"] = dataset.target
     return df, dataset.target_names
