@@ -15,4 +15,4 @@ def plot_feature_histogram(df: pd.DataFrame, feature: str) -> plt.figure:
     ax.set_xlabel(f"{feature.capitalize()}")
     ax.set_ylabel("Frequency")
     ax.set_title(f"{feature.capitalize()} feature distribution")
-    return
+    return fig
