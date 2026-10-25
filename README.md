@@ -12,8 +12,9 @@
 ## Requirements
 - python >= 3.14
 - pandas
-- scikit/learn
+- scikit-learn
 - matplotlib
+- numpy
 
 ### Used for development/testing
 - ipykernel
