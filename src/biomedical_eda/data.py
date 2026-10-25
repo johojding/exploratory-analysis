@@ -1,4 +1,4 @@
-from biomedical_quality import quality_report, class_balance_report
+from biomedical_quality import class_balance_report
 from sklearn.datasets import load_breast_cancer
 
 
